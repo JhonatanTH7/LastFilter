@@ -7,5 +7,5 @@ import com.Riwi.LastFilter.domain.entities.CouponEntity;
 
 @Repository
 public interface CouponRepository extends JpaRepository<CouponEntity, Long>  {
-  
+  public CouponEntity findByCode(String code);
 }
