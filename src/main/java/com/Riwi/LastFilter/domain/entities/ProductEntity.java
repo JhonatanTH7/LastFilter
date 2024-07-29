@@ -29,6 +29,6 @@ public class ProductEntity {
   private Boolean isActive;
   @Builder.Default
   private LocalDateTime createdAt = LocalDateTime.now();
-  @Column(nullable = false)
+  @Column(nullable = true)
   private LocalDateTime updatedAt;
 }

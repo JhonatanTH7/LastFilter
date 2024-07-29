@@ -36,7 +36,7 @@ public class UserEntity {
   @Column(nullable = false)
   @Builder.Default
   private LocalDateTime createdAt = LocalDateTime.now();
-  @Column(nullable = false)
+  @Column(nullable = true)
   private LocalDateTime updatedAt;
 
   @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
