@@ -12,9 +12,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class CouponRequest {
     @Size(max = 150)
     @NotNull(message = "The couponcode cannot be empty")
