@@ -28,7 +28,6 @@ public class CouponRequest {
     @Min(value = 0)
     @Max(value = 100)
     private Double discount;
-    @Size(max = 150)
     @NotNull(message = "The expiresdate cannot be empty")
     private LocalDateTime expiresDate;
     private Boolean isActive;
