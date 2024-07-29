@@ -2,6 +2,8 @@ package com.Riwi.LastFilter.api.dto.request;
 
 import java.time.LocalDateTime;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,6 +19,8 @@ public class CouponRequest {
     private String couponCode;
     @NotNull(message = "The description cannot be empty")
     private String description;
+    @Min(value = 0)
+    @Max(value = 100)
     private Double discount;
     @NotNull(message = "The expiresdate cannot be empty")
     private LocalDateTime expiresDate;
