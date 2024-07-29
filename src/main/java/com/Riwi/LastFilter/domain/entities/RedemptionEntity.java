@@ -26,6 +26,8 @@ public class RedemptionEntity {
   @Column(nullable = false)
   @Builder.Default
   private LocalDateTime redemptionDate = LocalDateTime.now();
+  @Column(nullable = false)
+  private Double totalValue;
 
   @ManyToOne
   @JoinColumn(name = "id_user")
