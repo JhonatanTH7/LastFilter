@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class CouponRequest {
-    @NotNull(message = "the couponCode not empy")
+    @NotNull(message = "The couponcode cannot be empty")
     private String couponCode;
-    @NotNull(message = "the description not empy")
+    @NotNull(message = "The description cannot be empty")
     private String description;
     private Double discount;
-    @NotNull(message = "the expiresDate not empy")
+    @NotNull(message = "The expiresdate cannot be empty")
     private LocalDateTime expiresDate;
     private Boolean isActive;
 }

@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class UserRequest {
-    @NotNull(message = "the name not empy")
+    @NotNull(message = "The name cannot be empty")
     private String name;
-    @NotNull(message = "the email not empy")
+    @NotNull(message = "The email cannot be empty")
     private String email;
-    @NotNull(message = "the password not empy")
+    @NotNull(message = "The password cannot be empty")
     private String password;
     private Boolean isActive;
 }

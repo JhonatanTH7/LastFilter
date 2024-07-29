@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductRequest {
-   @NotNull(message = "the ProductName not empy")
+   @NotNull(message = "The productname cannot be empty")
    private String productName;
-   @NotNull(message = "the productPrice not empy")
+   @NotNull(message = "The productprice cannot be empty")
    private Double productPrice; 
    private Boolean isActive;
 }
