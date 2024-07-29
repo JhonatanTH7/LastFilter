@@ -1,6 +1,5 @@
 package com.Riwi.LastFilter.api.dto.request;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
