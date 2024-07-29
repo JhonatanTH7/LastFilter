@@ -6,10 +6,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.Riwi.LastFilter.api.dto.response.ProductResponse;
+import com.Riwi.LastFilter.api.dto.response.ProductEntityResponse;
 import com.Riwi.LastFilter.domain.repositories.ProductRepository;
 import com.Riwi.LastFilter.infrastructure.abstract_services.IProductService;
-
+import com.Riwi.LastFilter.infrastructure.helpers.mappers.ProductEntityMapper;
 
 import lombok.AllArgsConstructor;
 
@@ -19,15 +19,19 @@ public class ProductService implements IProductService {
 
     @Autowired
     private final ProductRepository productRepository;
+
+    @Autowired
+    private final ProductEntityMapper productEntityMapper;
+
     
     @Override
-    public Page<ProductResponse> getAll(int page, int size) {
+    public Page<ProductEntityResponse> getAll(int page, int size) {
         if(page < 0){
             page = 0;
         }
 
         PageRequest pagination = PageRequest.of(page, size);
-        return this.productRepository.findAll(pagination).map(this.productMapper::toResponse);
+        return this.productRepository.findAll(pagination).map(this.productEntityMapper::toEntityResponse);
     }
         
 }

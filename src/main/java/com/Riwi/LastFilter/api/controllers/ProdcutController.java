@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Riwi.LastFilter.api.dto.response.ProductResponse;
+import com.Riwi.LastFilter.api.dto.response.ProductEntityResponse;
 import com.Riwi.LastFilter.infrastructure.abstract_services.IProductService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -28,7 +28,7 @@ public class ProdcutController{
         @Operation(summary = "List all products with pagination", 
                     description = "You must send the page and size to receive all corresponding products.")
     @GetMapping
-    public ResponseEntity<Page<ProductResponse>> getAll(
+    public ResponseEntity<Page<ProductEntityResponse>> getAll(
             @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "5") int size) {
         return ResponseEntity.ok(this.productService.getAll(page - 1, size));
