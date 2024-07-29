@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 public class ProductEntityResponse {
     private Long id;
     private String productName;
-    private Double ProductPrice;
+    private Double productPrice;
 }
