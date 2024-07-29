@@ -1,27 +1,33 @@
 The members are:
 
-*Jhonatan Toro 
-Role :Scrum Master
+Jhonatan Toro Role: Scrum Master
 
-*Keiver Lázaro
-Role: The development team
+Keiver Lázaro Role: Development team
 
-*Carlos Rivera
-Role: The development team
+Carlos Rivera Role: Development team
 
-*Luis Guillermo Foronda
-Role : The development team
+Luis Guillermo Foronda Role: Development team
 
 Explanation of the proposed solution:
 
-The team with the Scrum Master propose to solve the problem with a Rest full api for coupon discount management by adding accounts to the platform to verify that the same user does not use the same coupon 2 times.
+The team, led by the Scrum Master, proposes to address the problem with a RESTful API for coupon discount management. The solution includes adding accounts to the platform to ensure that the same user does not use the same coupon more than once. This API will facilitate efficient coupon management and prevent misuse, providing a more secure and reliable discount system.
 
-Step by step guide to start up the application:
+Step-by-step guide to start up the application:
 
-We expose the problem first then we look at the basic requirements of the application, talk among the team and propose solutions.
+Identify the Problem: We start by clearly defining and exposing the problem that needs to be solved.
 
-We start with the (UML) Task Board and Entity Relationship Model.
+Determine Requirements: Next, we analyze and list the basic requirements of the application, ensuring we understand what the application needs to achieve.
 
-We create and designate the tasks for the work team, we begin to make the preparations such as creating the repository, project and download the dependencies.
+Discuss Solutions: We then engage in discussions among team members to brainstorm and propose potential solutions.
 
-Once everything is explained and each member knows what we have to do, we start working and the Scrum Master is in charge of verifying the pull request to advance in the project without errors.
+Create UML Models: We begin with creating UML diagrams, including the Task Board and the Entity Relationship Model, to map out the project's structure and workflow.
+
+Assign Tasks: Tasks are created and designated to each team member according to their roles and responsibilities.
+
+Setup Environment: We prepare the development environment by creating the repository, setting up the project, and downloading the necessary dependencies.
+
+Start Development: With everything in place, the development process begins. The Scrum Master oversees the progress and ensures the project advances smoothly by reviewing pull requests and addressing any issues that arise.
+
+Continuous Integration: Regularly integrate code changes and review them to maintain a stable codebase and ensure the project is progressing without errors.
+
+Overall, the Scrum Master coordinates the team's efforts, while the development team focuses on implementing the solution effectively and efficiently.
