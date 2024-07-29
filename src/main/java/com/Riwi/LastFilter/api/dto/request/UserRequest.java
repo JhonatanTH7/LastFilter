@@ -1,6 +1,5 @@
 package com.Riwi.LastFilter.api.dto.request;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -9,9 +8,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class UserRequest {
     @Size(max = 150)
     @NotNull(message = "The name cannot be empty")

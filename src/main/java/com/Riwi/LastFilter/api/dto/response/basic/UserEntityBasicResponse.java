@@ -2,15 +2,15 @@ package com.Riwi.LastFilter.api.dto.response.basic;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 @Data
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class UserBasicResponse {
+public class UserEntityBasicResponse {
     private Long id;
     private String email;
     private String name;

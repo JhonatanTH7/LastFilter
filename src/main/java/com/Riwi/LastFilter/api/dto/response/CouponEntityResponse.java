@@ -1,4 +1,4 @@
-package com.Riwi.LastFilter.api.dto.response.basic;
+package com.Riwi.LastFilter.api.dto.response;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CouponBasicResponse {
+public class CouponEntityResponse {
     private Long id;
     private String couponCode;
     private String description;

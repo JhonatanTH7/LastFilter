@@ -2,9 +2,6 @@ package com.Riwi.LastFilter.api.dto.request;
 
 import java.time.LocalDateTime;
 
-import org.hibernate.validator.constraints.Length;
-
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -15,9 +12,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class CouponRequest {
     @Size(max = 150)
     @NotNull(message = "The couponcode cannot be empty")
